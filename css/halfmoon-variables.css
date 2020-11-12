@@ -8094,6 +8094,7 @@ select.form-control[multiple] > option:disabled {
 /* Dropdown menu */
 
 .dropdown-menu {
+    display: none;
     position: absolute;
     visibility: hidden;
     z-index: 10;
@@ -8109,6 +8110,9 @@ select.form-control[multiple] > option:disabled {
     -moz-box-shadow: var(--lm-dropdown-menu-box-shadow);
     -webkit-box-shadow: var(--lm-dropdown-menu-box-shadow);
     box-shadow: var(--lm-dropdown-menu-box-shadow);
+}
+.dropdown.show .dropdown-menu {
+    display: block;
 }
 .dark-mode .dropdown-menu {
     color: var(--dm-dropdown-menu-text-color);
